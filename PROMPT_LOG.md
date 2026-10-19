@@ -104,6 +104,31 @@
 
 ---
 
+### Lần 5: Tải hình ảnh cục bộ định dạng WebP vào thư mục assets và chuyển đổi liên kết trong HTML
+- **Prompt đã dùng:**  
+  `bạn hãy lấy mấy tấm ảnh mà bạn làm đặt tên là .webp dô thư mục assets đi`
+- **Kết quả AI tạo ra:**
+  - Khởi tạo thư mục `assets/` và tải về toàn bộ 10 tấm hình ảnh chất lượng cao ở định dạng chuẩn WebP nhẹ và sắc nét:
+    1. `assets/mien-bac.webp` (Ruộng bậc thang Tây Bắc)
+    2. `assets/mien-trung.webp` (Phố cổ Hội An đèn lồng)
+    3. `assets/mien-nam.webp` (TP. Hồ Chí Minh năng động)
+    4. `assets/pho-bo.webp` (Phở bò truyền thống)
+    5. `assets/banh-mi.webp` (Bánh mì kẹp Sài Gòn)
+    6. `assets/bun-cha.webp` (Bún chả Hà Nội)
+    7. `assets/ca-phe.webp` (Cà phê phin Việt Nam)
+    8. `assets/vinh-ha-long.webp` (Vịnh Hạ Long kỳ quan)
+    9. `assets/hoi-an.webp` (Phố cổ Hội An di sản)
+    10. `assets/trang-an.webp` (Quần thể Tràng An Ninh Bình)
+  - Cập nhật toàn bộ thuộc tính `src` của thẻ `<img>` trong `index.html` từ đường dẫn online sang đường dẫn nội bộ `assets/*.webp`.
+  - Đồng bộ trọn vẹn thư mục `assets/` vào thư mục làm việc trên VS Code của sinh viên.
+- **Nhận xét & Tinh chỉnh của SV:**
+  - Trang web tải nhanh vượt bậc, hiển thị hình ảnh tức thì và hoạt động hoàn hảo ở chế độ offline mà không lo bị lỗi link ảnh từ bên ngoài.
+- **Thách thức gặp phải / Cách sửa prompt (Debug prompt):**
+  - *Nguyên nhân:* Trước đó trang web phụ thuộc vào đường link ảnh online Unsplash, nếu mất mạng hoặc link lỗi thì hình ảnh sẽ không hiển thị được.
+  - *Giải pháp:* Yêu cầu AI tải trực tiếp các hình ảnh về máy, chuyển đổi sang định dạng `.webp` hiện đại để tối ưu dung lượng và cập nhật mã nguồn HTML tương ứng.
+
+---
+
 ### Danh sách các điểm rà soát khác (nếu có):
 - Footer thiếu thông tin liên hệ chi tiết: (SV tự bổ sung nếu cần mở rộng)
 - Thay đổi link CDN thư viện khi triển khai thực tế: (SV tự bổ sung nếu cần)
