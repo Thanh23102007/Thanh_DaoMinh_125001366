@@ -108,7 +108,9 @@ img {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
   color: var(--color-white);
   box-shadow: 0 4px 20px rgba(179, 29, 22, 0.25);
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 /* Thanh điều hướng cố định phía trên */
@@ -120,7 +122,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .brand-logo {
@@ -135,10 +136,6 @@ img {
 .brand-logo:hover {
   opacity: 0.95;
   transform: scale(1.02);
-}
-
-.flag-icon {
-  font-size: 1.6rem;
 }
 
 /* Danh sách menu dùng Flexbox xếp ngang */
@@ -182,16 +179,18 @@ img {
   width: 80%;
 }
 
-/* Phần Banner chào mừng (Hero Section) */
+/* Phần Banner chào mừng (Hero Section) đặt ở đầu main, trải rộng hết chiều ngang */
 .hero-banner {
-  max-width: 900px;
-  margin: 0 auto;
+  width: 100%;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  color: var(--color-white);
   padding: 5rem var(--space-lg) 6rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.25rem;
+  box-shadow: 0 4px 20px rgba(179, 29, 22, 0.15);
 }
 
 .hero-tag {
@@ -268,14 +267,24 @@ img {
    Quy chuẩn bố cục chung cho cả 4 phần nội dung.
    ========================================================================== */
 .main-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: var(--space-xl) var(--space-lg) 5rem;
+  width: 100%;
+  padding-bottom: 5rem;
 }
 
 .content-section {
-  padding: 4.5rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4.5rem var(--space-lg);
   border-bottom: 1px dashed var(--border-color);
+  scroll-margin-top: 80px; /* Tránh bị thanh menu sticky che tiêu đề khi cuộn trang */
+}
+
+/* Thêm scroll-margin-top cụ thể cho các section để khi bấm menu không bị che */
+#gioi-thieu,
+#ba-mien,
+#am-thuc,
+#dia-danh {
+  scroll-margin-top: 80px;
 }
 
 .content-section:last-of-type {
@@ -650,11 +659,11 @@ img {
 
   /* Nội dung chính */
   .main-content {
-    padding: var(--space-lg) var(--space-md) 3.5rem;
+    padding-bottom: 3.5rem;
   }
 
   .content-section {
-    padding: var(--space-2xl) 0;
+    padding: var(--space-2xl) var(--space-md);
   }
 
   .section-heading {
