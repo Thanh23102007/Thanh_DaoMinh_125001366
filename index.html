@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khám Phá Việt Nam - Vẻ Đẹp Bất Tận</title>
+  <!-- Nhúng font chữ Google Fonts (Be Vietnam Pro) giúp hiển thị tiếng Việt rất đẹp -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Thư viện hiệu ứng Animate.css (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Thư viện hiệu ứng cuộn trang AOS CSS (CDN) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Liên kết đến tập tin CSS bên ngoài -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       PHẦN 1: HEADER & THANH ĐIỀU HƯỚNG (NAV)
+       Thẻ <header> đại diện cho phần đầu của trang web.
+       Thẻ <nav> dùng chứa các liên kết điều hướng người dùng.
+       ========================================================= -->
+  <header class="site-header">
+    <nav class="navbar">
+      <!-- Logo và tên thương hiệu -->
+      <a href="#" class="brand-logo">
+        <span class="flag-icon">🇻🇳</span>
+        <span class="brand-text">Việt Nam Quê Hương Tôi</span>
+      </a>
+
+      <!-- Danh sách liên kết điều hướng -->
+      <ul class="nav-links">
+        <li><a href="#gioi-thieu" class="nav-item">Giới thiệu</a></li>
+        <li><a href="#ba-mien" class="nav-item">Ba miền</a></li>
+        <li><a href="#am-thuc" class="nav-item">Ẩm thực</a></li>
+        <li><a href="#dia-danh" class="nav-item">Địa danh</a></li>
+      </ul>
+    </nav>
+
+    <!-- Banner giới thiệu (Hero Banner) nằm trong header -->
+    <section class="hero-banner">
+      <span class="hero-tag">Chào mừng bạn đến với đất nước hình chữ S</span>
+      <!-- Áp dụng hiệu ứng Animate.css cho tiêu đề và nút bấm -->
+      <h1 class="hero-title animate__animated animate__fadeInDown">Việt Nam - Đất Nước & Con Người</h1>
+      <p class="hero-desc">
+        Hành trình khám phá vẻ đẹp thiên nhiên hùng vĩ, nền văn hóa ngàn năm lịch sử
+        và tinh hoa ẩm thực say đắm lòng người.
+      </p>
+      <a href="#gioi-thieu" class="btn-primary animate__animated animate__zoomIn animate__delay-1s">Bắt đầu khám phá</a>
+    </section>
+  </header>
+
+  <!-- =========================================================
+       PHẦN 2: NỘI DUNG CHÍNH (MAIN)
+       Thẻ <main> chứa toàn bộ nội dung trọng tâm của trang web.
+       Bao gồm 4 section lớn theo yêu cầu.
+       ========================================================= -->
+  <main class="main-content">
+
+    <!-- -------------------------------------------------------
+         PHẦN 2.1: GIỚI THIỆU CHUNG
+         Thẻ <section> đại diện cho một khối nội dung có liên quan.
+         ------------------------------------------------------- -->
+    <section id="gioi-thieu" class="content-section intro-section" data-aos="fade-up">
+      <header class="section-heading">
+        <span class="section-badge">Tổng quan</span>
+        <h2>Giới Thiệu Chung Về Việt Nam</h2>
+        <p>Vùng đất tươi đẹp tại vùng Đông Nam Á với bề dày lịch sử và lòng hiếu khách nồng hậu</p>
+      </header>
+
+      <article class="intro-overview">
+        <p class="intro-text">
+          Nằm bên bờ biển Đông ngập tràn ánh nắng, <strong>Cộng hòa Xã hội Chủ nghĩa Việt Nam</strong> 
+          sở hữu dải đất hình chữ S uốn lượn tuyệt mỹ với hơn 3.260 km bờ biển. Trải qua hơn bốn ngàn 
+          năm dựng nước và giữ nước, đất nước ta tự hào với nền văn minh lúa nước rực rỡ, 54 dân tộc anh em 
+          cùng chung sống chan hòa, đoàn kết và một tinh thần yêu chuộng hòa bình sâu sắc.
+        </p>
+
+        <!-- Thẻ tóm tắt thông số nhanh bằng thẻ ngữ nghĩa <aside> và <dl> (Description List) -->
+        <aside class="quick-facts">
+          <h3 class="facts-title">Thông Tin Nhanh</h3>
+          <dl class="facts-grid">
+            <div class="fact-item">
+              <dt>Thủ đô:</dt>
+              <dd>Hà Nội</dd>
+            </div>
+            <div class="fact-item">
+              <dt>Diện tích:</dt>
+              <dd>Khoảng 331.212 km²</dd>
+            </div>
+            <div class="fact-item">
+              <dt>Dân số:</dt>
+              <dd>Hơn 100 triệu người</dd>
+            </div>
+            <div class="fact-item">
+              <dt>Quốc khánh:</dt>
+              <dd>2 tháng 9</dd>
+            </div>
+          </dl>
+        </aside>
+      </article>
+    </section>
+
+    <!-- -------------------------------------------------------
+         PHẦN 2.2: BA MIỀN ĐẤT NƯỚC
+         Sử dụng các thẻ <article> để làm card thông tin cho mỗi miền.
+         ------------------------------------------------------- -->
+    <section id="ba-mien" class="content-section regions-section" data-aos="fade-up">
+      <header class="section-heading">
+        <span class="section-badge">Bản sắc</span>
+        <h2>Nét Đẹp Ba Miền Bắc - Trung - Nam</h2>
+        <p>Mỗi miền mang một vẻ đẹp riêng biệt về khí hậu, cảnh sắc và tính cách con người</p>
+      </header>
+
+      <!-- Khung chứa các card ba miền, được dàn layout bằng CSS Grid -->
+      <section class="card-container grid-3-cols">
+        <!-- Card 1: Miền Bắc -->
+        <article class="info-card region-card" tabindex="0">
+          <figure class="card-media">
+            <img 
+              src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=700&q=80" 
+              alt="Phong cảnh ruộng bậc thang Tây Bắc hùng vĩ" 
+              loading="lazy"
+            >
+            <figcaption class="card-tag">Miền Bắc</figcaption>
+          </figure>
+          <header class="card-header">
+            <h3>Bắc Bộ: Nghìn Năm Văn Hiến</h3>
+          </header>
+          <p class="card-desc">
+            Vùng đất cội nguồn với thủ đô Hà Nội cổ kính, những thửa ruộng bậc thang kỳ vĩ tại Sa Pa, 
+            Mù Cang Chải cùng nét văn hóa truyền thống sâu lắng, bốn mùa xuân - hạ - thu - đông rõ rệt.
+          </p>
+          <ul class="highlight-tags">
+            <li>Hồ Gươm</li>
+            <li>Tràng An</li>
+            <li>Fansipan</li>
+          </ul>
+        </article>
+
+        <!-- Card 2: Miền Trung -->
+        <article class="info-card region-card" tabindex="0">
+          <figure class="card-media">
+            <img 
+              src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80" 
+              alt="Phố cổ Hội An lung linh đèn lồng bên dòng sông Hoài" 
+              loading="lazy"
+            >
+            <figcaption class="card-tag">Miền Trung</figcaption>
+          </figure>
+          <header class="card-header">
+            <h3>Trung Bộ: Di Sản & Biển Xanh</h3>
+          </header>
+          <p class="card-desc">
+            Dải đất kiên cường hẹp dài, nơi hội tụ hàng loạt di sản thế giới như Cố đô Huế, Phố cổ Hội An, 
+            và Phong Nha - Kẻ Bàng cùng bờ biển xanh ngắt và con người chịu thương chịu khó.
+          </p>
+          <ul class="highlight-tags">
+            <li>Cố đô Huế</li>
+            <li>Đà Nẵng</li>
+            <li>Phố cổ Hội An</li>
+          </ul>
+        </article>
+
+        <!-- Card 3: Miền Nam -->
+        <article class="info-card region-card" tabindex="0">
+          <figure class="card-media">
+            <img 
+              src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=700&q=80" 
+              alt="Thành phố Hồ Chí Minh năng động và phát triển hiện đại" 
+              loading="lazy"
+            >
+            <figcaption class="card-tag">Miền Nam</figcaption>
+          </figure>
+          <header class="card-header">
+            <h3>Nam Bộ: Phù Sa & Năng Động</h3>
+          </header>
+          <p class="card-desc">
+            Vùng đất màu mỡ của đồng bằng sông Cửu Long bạt ngàn cây trái và đô thị TP. Hồ Chí Minh phồn hoa. 
+            Người miền Nam nồng hậu, phóng khoáng, mến khách và hào sảng.
+          </p>
+          <ul class="highlight-tags">
+            <li>Sài Gòn</li>
+            <li>Chợ nổi Cái Răng</li>
+            <li>Đảo Phú Quốc</li>
+          </ul>
+        </article>
+      </section>
+    </section>
+
+    <!-- -------------------------------------------------------
+         PHẦN 2.3: ẨM THỰC VIỆT NAM
+         Giới thiệu các món ăn tiêu biểu bằng thẻ <article>.
+         ------------------------------------------------------- -->
+    <section id="am-thuc" class="content-section cuisine-section" data-aos="fade-up">
+      <header class="section-heading">
+        <span class="section-badge">Hương vị</span>
+        <h2>Tinh Hoa Ẩm Thực Việt</h2>
+        <p>Sự cân bằng hoàn hảo giữa âm - dương, kết hợp tinh tế giữa thảo mộc tự nhiên và gia vị truyền thống</p>
+      </header>
+
+      <!-- Khung chứa danh sách thẻ món ăn sử dụng Flexbox hoặc Grid -->
+      <section class="card-container grid-4-cols">
+        <!-- Món 1: Phở -->
+        <article class="info-card food-card" tabindex="0">
+          <figure class="card-media">
+            <img 
+              src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=600&q=80" 
+              alt="Bát Phở bò truyền thống thơm lừng hành ngò" 
+              loading="lazy"
+            >
+            <figcaption class="card-price-badge">Quốc hồn quốc túy</figcaption>
+          </figure>
+          <header class="card-header">
+            <h3>Phở Bò Truyền Thống</h3>
+          </header>
+          <p class="card-desc">
+            Nước dùng thanh ngọt ninh từ xương ống qua nhiều giờ cùng hoa hồi, quế, thảo quả, hòa quyện với bánh phở mềm mịn và thịt bò tươi ngon.
+          </p>
+        </article>
+
+        <!-- Món 2: Bánh Mì -->
+        <article class="info-card food-card" tabindex="0">
+          <figure class="card-media">
+            <img 
+              src="https://images.unsplash.com/photo-1626804475297-41608ea09aeb?auto=format&fit=crop&w=600&q=80" 
+              alt="Bánh mì Việt Nam vỏ giòn nhân thập cẩm pate chả lụa" 
+              loading="lazy"
+            >
+            <figcaption class="card-price-badge">Được thế giới vinh danh</figcaption>
+          </figure>
+          <header class="card-header">
+            <h3>Bánh Mì Kẹp Sài Gòn</h3>
+          </header>
+          <p class="card-desc">
+            Vỏ bánh nướng giòn rụm bên ngoài kết hợp nhân pa-tê béo ngậy, thịt xá xíu, dưa chua, dưa leo và rau mùi thơm nức lòng.
+          </p>
+        </article>
+
+        <!-- Món 3: Bún Chả -->
+        <article class="info-card food-card" tabindex="0">
+          <figure class="card-media">
+            <img 
+              src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=600&q=80" 
+              alt="Món bún chả nướng than hoa Hà Nội kèm rau sống" 
+              loading="lazy"
+            >
+            <figcaption class="card-price-badge">Hương vị Hà Thành</figcaption>
+          </figure>
+          <header class="card-header">
+            <h3>Bún Chả Hà Nội</h3>
+          </header>
+          <p class="card-desc">
+            Từng miếng chả thịt được tẩm ướp đậm đà, nướng thơm lừng trên than hồng, ăn kèm bát nước mắm chua ngọt ấm nóng và rau thơm tươi mát.
+          </p>
+        </article>
+
+        <!-- Món 4: Cà Phê -->
+        <article class="info-card food-card" tabindex="0">
+          <figure class="card-media">
+            <img 
+              src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" 
+              alt="Ly cà phê phin đậm đà phong cách Việt Nam" 
+              loading="lazy"
+            >
+            <figcaption class="card-price-badge">Văn hóa đường phố</figcaption>
+          </figure>
+          <header class="card-header">
+            <h3>Cà Phê Phin & Cà Phê Trứng</h3>
+          </header>
+          <p class="card-desc">
+            Hạt cà phê Robusta đậm vị chảy từng giọt chậm rãi qua phin nhôm truyền thống, hay lớp kem trứng sánh mịn đánh bông ngọt ngào.
+          </p>
+        </article>
+      </section>
+    </section>
+
+    <!-- -------------------------------------------------------
+         PHẦN 2.4: ĐỊA DANH NỔI TIẾNG
+         Giới thiệu những danh thắng kỳ vĩ của Việt Nam.
+         ------------------------------------------------------- -->
+    <section id="dia-danh" class="content-section places-section" data-aos="fade-up">
+      <header class="section-heading">
+        <span class="section-badge">Kỳ quan</span>
+        <h2>Địa Danh Nổi Tiếng Bậc Nhất</h2>
+        <p>Những điểm đến níu chân hàng triệu du khách quốc tế mỗi năm</p>
+      </header>
+
+      <!-- Danh sách card các địa danh nổi tiếng sắp xếp bằng CSS Grid -->
+      <section class="card-container grid-3-cols">
+        <!-- Địa danh 1: Vịnh Hạ Long -->
+        <article class="info-card place-card" tabindex="0">
+          <figure class="card-media">
+            <img 
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80" 
+              alt="Vịnh Hạ Long với hàng nghìn hòn đảo đá vôi xanh ngọc" 
+              loading="lazy"
+            >
+            <figcaption class="card-tag">Quảng Ninh</figcaption>
+          </figure>
+          <header class="card-header">
+            <h3>Vịnh Hạ Long</h3>
+          </header>
+          <p class="card-desc">
+            Kỳ quan thiên nhiên của thế giới với hàng ngàn đảo đá vôi trùng điệp nhấp nhô trên mặt biển màu ngọc bích phẳng lặng.
+          </p>
+          <aside class="landmark-status">Di sản Thiên nhiên Thế giới UNESCO</aside>
+        </article>
+
+        <!-- Địa danh 2: Phố Cổ Hội An -->
+        <article class="info-card place-card" tabindex="0">
+          <figure class="card-media">
+            <img 
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80" 
+              alt="Phố cổ Hội An với mái ngói rêu phong và đèn lồng đỏ" 
+              loading="lazy"
+            >
+            <figcaption class="card-tag">Quảng Nam</figcaption>
+          </figure>
+          <header class="card-header">
+            <h3>Phố Cổ Hội An</h3>
+          </header>
+          <p class="card-desc">
+            Đô thị thương cảng cổ thế kỷ 16 với những ngôi nhà sơn vàng cổ kính, giàn hoa giấy rực rỡ và muôn ngàn sắc đèn lồng về đêm.
+          </p>
+          <aside class="landmark-status">Di sản Văn hóa Thế giới UNESCO</aside>
+        </article>
+
+        <!-- Địa danh 3: Danh thắng Tràng An -->
+        <article class="info-card place-card" tabindex="0">
+          <figure class="card-media">
+            <img 
+              src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=700&q=80" 
+              alt="Non nước Tràng An Ninh Bình sơn thủy hữu tình" 
+              loading="lazy"
+            >
+            <figcaption class="card-tag">Ninh Bình</figcaption>
+          </figure>
+          <header class="card-header">
+            <h3>Quần Thể Tràng An</h3>
+          </header>
+          <p class="card-desc">
+            Bức tranh sơn thủy hữu tình được ví như "Hạ Long trên cạn", nơi du khách lướt nhẹ trên thuyền thoi len qua những hang động kỳ bí.
+          </p>
+          <aside class="landmark-status">Di sản Hỗn hợp Đầu tiên ở ĐNA</aside>
+        </article>
+      </section>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       PHẦN 3: FOOTER (CHÂN TRANG)
+       Thẻ <footer> chứa thông tin tác giả, bản quyền, liên hệ.
+       ========================================================= -->
+  <footer class="site-footer">
+    <p class="footer-quote">
+      "Đất nước tôi thon thả giọt đàn bầu - Nghe dịu nỗi đau của mẹ, ba lần tiễn con đi, hai lần khóc thầm lặng lẽ..."
+    </p>
+
+    <!-- Nhóm liên kết nhanh dùng thẻ <nav> nhỏ hoặc danh sách liên kết -->
+    <nav class="footer-nav" aria-label="Điều hướng chân trang">
+      <a href="#gioi-thieu">Về Việt Nam</a>
+      <a href="#ba-mien">Ba Miền</a>
+      <a href="#am-thuc">Món Ngon</a>
+      <a href="#dia-danh">Điểm Đến</a>
+    </nav>
+
+    <!-- Bản quyền và thông tin bài tập -->
+    <p class="footer-copy">
+      &copy; 2026 Dự án Web Giới Thiệu Việt Nam. Trang web thiết kế phục vụ mục đích học tập HTML &amp; CSS ngữ nghĩa.
+    </p>
+  </footer>
+
+  <!-- =========================================================
+       THƯ VIỆN AOS (ANIMATE ON SCROLL) JS
+       Tạo hiệu ứng mượt mà khi cuộn tới các section.
+       ========================================================= -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    // Khởi tạo thư viện AOS
+    AOS.init({
+      duration: 800,  // Thời gian chạy hiệu ứng (800ms)
+      once: true      // Chỉ chạy hiệu ứng 1 lần khi cuộn tới
+    });
+  </script>
+</body>
+</html>
